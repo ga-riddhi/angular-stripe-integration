@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>StripeDemo</title>
@@ -7,7 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    var stripe = Stripe('pk_test_ETLvhroNJGhhrgcNAquP96wg00OC4wlEew'); // use your test publishable key
+    var elements = stripe.elements();
+  </script>
 </body>
+
 </html>
